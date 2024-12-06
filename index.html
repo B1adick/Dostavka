@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система доставки їжі</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Система доставки їжі</h1>
+
+    <!-- Меню ресторану Pizza Hut -->
+    <div class="menu">
+        <h2>Меню ресторану Pizza Hut</h2>
+        <div id="restaurant1-menu">
+            <!-- Меню ресторану Pizza Hut буде відображатися тут -->
+        </div>
+    </div>
+
+    <!-- Меню ресторану Sushi Time -->
+    <div class="menu">
+        <h2>Меню ресторану Sushi Time</h2>
+        <div id="restaurant2-menu">
+            <!-- Меню ресторану Sushi Time буде відображатися тут -->
+        </div>
+    </div>
+
+    <!-- Інформація про страви в замовленні -->
+    <div class="order-summary">
+        <h2>Страви в замовленні</h2>
+        <div id="order-items">
+            <!-- Страви замовлення будуть відображатися тут -->
+        </div>
+    </div>
+
+    <!-- Загальна інформація про замовлення -->
+    <div class="order-summary">
+        <h2>Загальна інформація про замовлення</h2>
+        <p id="order-info">Немає замовлення</p>
+
+        <!-- Форма вибору способу оплати -->
+        <div>
+            <label for="payment-method">Вибір способу оплати:</label>
+            <select id="payment-method">
+                <option value="cash">Оплата готівкою</option>
+                <option value="card">Оплата карткою</option>
+            </select>
+        </div>
+
+        <!-- Кнопка для оформлення замовлення -->
+        <button class="button" onclick="submitOrder()">Оформити замовлення</button>
+
+        <!-- Кнопка для передачі замовлення кур'єру -->
+        <button id="assign-order-button" onclick="assignOrderToCourier()">Передати кур'єру</button>
+    </div>
+
+    <!-- Інформація про кур'єра -->
+    <div id="courier-info">
+        Немає поточного замовлення
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
